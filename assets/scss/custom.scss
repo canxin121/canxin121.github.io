@@ -1,3 +1,29 @@
 /*
-    You can add your own custom styles here.
+    ShortCode/details
 */
+.summary {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.summary::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    transition: transform 0.1s ease-in-out;
+    width: 16px;
+    height: 16px;
+    background-image: url('/images/arrow.png');
+    background-size: contain;
+}
+
+.summary.rotated::before {
+    transform: rotate(90deg);
+}
+
+.summary.dark-mode::before {
+    filter: invert(1);
+}

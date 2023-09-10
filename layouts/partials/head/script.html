@@ -1,0 +1,21 @@
+<!-- 在头部定义一个全局的scheme监测器,方便自定义组件的模式切换 -->
+<script>
+    window.scheme_callbacks = [];
+    window.addSchemeObserverCallback = function (callback) {
+        window.scheme_callbacks.push(callback);
+    };
+    var scheme_observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+            if (mutation.type == 'attributes' && mutation.attributeName == 'data-scheme') {
+                var scheme = document.querySelector('html').getAttribute('data-scheme');
+                window.isDark = scheme === 'dark';
+                window.scheme_callbacks.forEach(function (callback) {
+                    callback(window.isDark);
+                });
+            }
+        });
+    });
+    var scheme_config = { attributes: true, childList: false, characterData: false };
+
+    scheme_observer.observe(document.querySelector('html'), scheme_config);
+</script>

@@ -1,0 +1,24 @@
+<!-- 在底部处理所有Summary的折叠方法 -->
+<script>
+    var summaries = document.querySelectorAll('.summary');
+    summaries.forEach(function (summary, index) {
+        summary.addEventListener('click', function () {
+            this.classList.toggle('rotated');
+        });
+    });
+</script>
+
+<!-- 在底部定义处理所有summary的arrow的dark-mode -->
+<script>
+    function arrow_is_dark(isDark) {
+        document.querySelectorAll('.summary').forEach(function (summary) {
+            if (isDark) {
+                summary.classList.add('dark-mode');
+            } else {
+                summary.classList.remove('dark-mode');
+            }
+        });
+    }
+    arrow_is_dark(window.isDark)
+    window.addSchemeObserverCallback(arrow_is_dark);
+</script>
