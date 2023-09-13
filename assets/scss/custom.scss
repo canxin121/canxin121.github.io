@@ -1,6 +1,18 @@
 /*
     ShortCode/details
 */
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+    margin-inline-start: calc((var(--card-padding)) * -1);
+    padding-inline-start: calc(var(--card-padding) - var(--heading-border-size) + 10px);
+    border-inline-start: var(--heading-border-size)solid var(--accent-color);
+}
+
 .summary {
     display: flex;
     align-items: center;
@@ -12,7 +24,7 @@
 .summary::before {
     content: "";
     position: absolute;
-    left: -19px;
+    left: -13px;
     transition: transform 0.1s ease-in-out;
     width: 16px;
     height: 16px;

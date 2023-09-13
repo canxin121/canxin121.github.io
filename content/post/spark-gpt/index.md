@@ -54,6 +54,7 @@ Ps: `各来源的配置使用均在WebUi中已有详细说明`
 | Discord  | ✔️        | ✔️        | ✔️        | ✔️        |
   
 Ps: `各聊天平台接入,请查看对应的Nonebot适配器使用说明`
+
 {{< details "## 基本概念说明" >}}
 
 {{< details "### 会话( chat )" >}}
@@ -116,7 +117,7 @@ Ps: `各聊天平台接入,请查看对应的Nonebot适配器使用说明`
         PL["获取预设列表"]
         CmdL["获取指令列表"]
         CL["获取可用会话 (公有 | 私有)"]
-        CAprivate["创建新的会话{ (私有 | 公有 {仅管理员} ) }"]
+        CAprivate["创建新的会话 (私有 | 公有 {仅管理员} ) "]
         CC["使用会话"]
         CPC["回复来继续会话"]
         CU --> CL
@@ -138,8 +139,61 @@ Ps: `各聊天平台接入,请查看对应的Nonebot适配器使用说明`
 {{< details "## 部署教程" >}}
 {{< details "### 部署Nonebot" >}}
 
-**这里直接看Well404的教程吧,点击即可跳转到b站**
+**这里直接看Well404的教程吧,点击即可跳转到b站系列教程**
 {{< bilibili av608028309 1>}}
+
+
+{{< /details >}}
+{{< details "### 部署各适配器" >}}
+在这里我直接贴出个适配器的官方使用文档或者合适的教程了
+
+{{< details "#### QQ(OBV11)" >}}
+首先是qsign的部署,这个目前是 必须的
+{{< bilibili BV11W4y1o7u5 1>}}
+然后需要使用 gocq 的dev 版本,这里给出 gocq dev的action地址,可以自行在这里寻找合适的构建版本,  
+而连接到nb的方法在上面的 nonebot部署教程中已经又过了,这里不在放出地址  
+[gocq-dev Action CL](https://github.com/Mrs4s/go-cqhttp/actions/workflows/ci.yml)
+{{< /details >}}
+
+{{< details "#### QQGuid (QQ频道)" >}}
+[QQ频道适配器 gh链接](https://github.com/nonebot/adapter-qqguild)
+{{< /details >}}
+
+{{< details "#### KOOK(开黑啦)" >}}
+[KOOK(开黑啦)适配器 gh链接](https://github.com/Tian-que/nonebot-adapter-kaiheila)
+{{< /details >}}
+
+{{< details "#### 飞书" >}}
+[飞书(Lark)适配器 gh链接](https://feishu.adapters.nonebot.dev/docs/guide/installation)
+{{< /details >}}
+
+{{< details "#### Telegram" >}}
+[Telegram适配器 gh链接](https://github.com/nonebot/adapter-telegram)
+{{< /details >}}
+
+{{< details "#### Discord" >}}
+[Discord适配器 gh链接](https://github.com/nonebot/adapter-discord)
+{{< /details >}}
+
+
+{{< /details >}}
+
+{{< details "### 部署Spark GPT" >}}
+
+{{< details "#### 安装插件" >}}
+```bash
+nb plugin install spark_gpt
+```
+{{< /details >}}
+
+{{< details "#### 配置相关信息" >}}
+
+
+1. SparkGPT 依赖 [nonebot_plugin_web_config](https://github.com/canxin121/nonebot_plugin_web_config) 进行实时配置热更新,所以需要配置的相关信息,可以点击进入查看相关的env配置.
+2. SparkGPT 的GPT来源需要手动配置相应的 auth 信息才可以使用,具体获取方式都均在web ui(默认[http://127.0.0.1:8666](http://127.0.0.1:8666))中医用标出,并可以实时热更新.
+
+
+{{< /details >}}
 
 
 {{< /details >}}
