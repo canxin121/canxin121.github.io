@@ -192,8 +192,8 @@ nb plugin install spark_gpt
 ##### 配置相关信息
 
 
-1. SparkGPT 依赖 [nonebot_plugin_web_config](https://github.com/canxin121/nonebot_plugin_web_config) 进行实时配置热更新,所以需要配置的相关信息,可以点击进入查看相关的env配置.
-2. SparkGPT 的GPT来源需要手动配置相应的 auth 信息才可以使用,具体获取方式都均在web ui(默认[http://127.0.0.1:8666](http://127.0.0.1:8666))中医用标出,并可以实时热更新.
+1. SparkGPT 依赖 [nonebot_plugin_web_config](https://github.com/canxin121/nonebot_plugin_web_config) 进行实时配置热更新,所以需要配置的相关信息(端口,账号密码),可以点击进入查看相关的env配置.
+2. SparkGPT 的GPT来源需要手动配置相应的 auth 信息才可以使用,具体获取方式都均在web ui(默认[http://127.0.0.1:8666](http://127.0.0.1:8666))中已经标出,并可以实时热更新.
 
 
 ### 使用教程
