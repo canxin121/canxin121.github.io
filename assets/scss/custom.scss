@@ -1,7 +1,17 @@
 /*
     ShortCode/details
 */
+/* 调整 `` 代码块的字体颜色纯黑 */
+.article-content code {
+    color: #000000;
+    background-color: var(--code-background-color);
+    padding: 2px 4px;
+    border-radius: var(--tag-border-radius);
+    font-family: var(--code-font-family);
+}
 
+
+/* 调整 md 标题的左间距,使变大 */
 .article-content h1,
 .article-content h2,
 .article-content h3,
@@ -13,6 +23,7 @@
     border-inline-start: var(--heading-border-size)solid var(--accent-color);
 }
 
+/*自制了一个比较美观的 md 的折叠标题块*/
 .summary {
     display: flex;
     align-items: center;
@@ -39,3 +50,8 @@
 .summary.dark-mode::before {
     filter: invert(1);
 }
+
+.content {
+    display: none;
+}
+
