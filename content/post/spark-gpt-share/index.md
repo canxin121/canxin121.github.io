@@ -12,6 +12,7 @@ license:
 hidden: false
 comments: false
 ---
+## 项目地址 -> [Spark-GPT](https://github.com/canxin121/Spark-GPT)
 
 ## Nonebot框架
 由于SparkGPT由Python开发, 在Python中运行, 而Python目前最佳的bot框架为Nonebot框架,所以 目前2.0.0版本深度绑定Nonebot框架进行开发.  

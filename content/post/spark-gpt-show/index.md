@@ -12,6 +12,7 @@ license:
 hidden: false
 comments: false
 ---
+## 项目地址 -> [Spark-GPT](https://github.com/canxin121/Spark-GPT)
 
 ## SparkGPT使用示例
 ## Webui
