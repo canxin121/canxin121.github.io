@@ -37,3 +37,6 @@ comments: false
 ![ 查看某个指令 ]( images/command_show.png )
 ![ 添加新的指令 ]( images/command_add.png )
 ![ 删除一个指令 ]( images/command_del.png )
+
+## 群二维码
+![](images/qrcode.png)
