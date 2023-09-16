@@ -5,6 +5,7 @@ date: 2023-09-10 00:00:00+0000
 image: cover.png
 categories:
     - Nonebot
+    - SparkGPT
 tags:
     - Ai
     - Nonebot
