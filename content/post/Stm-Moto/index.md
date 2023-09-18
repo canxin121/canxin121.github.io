@@ -51,6 +51,7 @@ comments: false
 3. 驱动板的 PWMB (这里的B就是代表B电机了) 接 Stm 的 Pin 设定为 TIM 并将对应 TIM 的 对应 CH 设定为PWM GENERATION CHx, 用来输出PWM信号
 4. 驱动版的 BIN1,2 接 Stm 的 Pin 设定为 GPIO OUTput, 用来设定电机旋转的模式
 
+还有其他的使能,电源接口就不赘述了.可以查看 驱动板的使用说明
 #### 触控屏和Stm
 1. 触控屏使用UART通信, TX,RX 和 Stm 对接(小白注意嗷,TX->RX对接), Stm上的 两个Pin 设置RX,TX(这里用的USART), 并且要打开对应USART的NVIC (中断)
 
@@ -58,8 +59,6 @@ comments: false
 1. 调试下载的直接对应相连, 电压接3v3, GND对接
 2. Pwlink2lite 的 Rx 接到Stm 的 Pin 设置为 USART TX, 用来发送调试信息(后面的代码部分会提到Printf的重定向)
 
-
-其他的使能和
 
 ### Stm Cube MX 配置
 
