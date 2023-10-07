@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nonebot on Canxin Site</title><link>https://canxin121.github.io/tags/nonebot/</link><description>Recent content in Nonebot on Canxin Site</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 10 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://canxin121.github.io/tags/nonebot/index.xml" rel="self" type="application/rss+xml"/><item><title>SparkGPT</title><link>https://canxin121.github.io/p/sparkgpt/</link><pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate><guid>https://canxin121.github.io/p/sparkgpt/</guid><description>&lt;img src="https://canxin121.github.io/p/sparkgpt/cover.png" alt="Featured image of post SparkGPT" />&lt;h2 id="项目地址---spark-gpthttpsgithubcomcanxin121spark-gpt">项目地址 -&amp;gt; &lt;a class="link" href="https://github.com/canxin121/Spark-GPT" target="_blank" rel="noopener"
+>Spark-GPT&lt;/a>&lt;/h2>
+&lt;h2 id="feature">Feature&lt;/h2>
+&lt;ul>
+&lt;li>使用Nonebot框架跨适配器实现,多聊天平台同步实现&lt;/li>
+&lt;li>支持 QQ, QQ频道, Kook, 飞书, Telegram, Discord&lt;/li>
+&lt;li>支持跨平台账户绑定,多平台账户统一数据&lt;/li>
+&lt;li>适配多来源语言模型, 多态模型&lt;/li>
+&lt;li>实现 多用户, 多会话窗口, 公共会话和私有会话&lt;/li>
+&lt;li>实现 流式输出 , 文转图, 文转网络剪切板链接&lt;/li>
+&lt;li>实现WebUi编辑配置,实时热更新&lt;/li>
+&lt;/ul>
+&lt;h2 id="todo">ToDo&lt;/h2>
+&lt;ul>
+&lt;li>负载均衡&lt;/li>
+&lt;li>用户权限系统&lt;/li>
+&lt;/ul>
+&lt;h2 id="模型来源支持情况">模型来源支持情况&lt;/h2>
+&lt;p>✔️:支持 ❌:不支持&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>来源&lt;/th>
+&lt;th>传入文本&lt;/th>
+&lt;th>传入图片&lt;/th>
+&lt;th>输出文本&lt;/th>
+&lt;th>输出图片&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Newbing&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Poe&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ChatGPT Api&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ChatGPT 网页&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Claude.Ai&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Slack Claude&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Ps: &lt;code>各来源的配置使用均在WebUi中已有详细说明&lt;/code>&lt;/p>
+&lt;h2 id="聊天平台支持情况">聊天平台支持情况&lt;/h2>
+&lt;p>✔️:支持 ❌:不支持&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>来源&lt;/th>
+&lt;th>传入文本&lt;/th>
+&lt;th>传入图片&lt;/th>
+&lt;th>输出文本&lt;/th>
+&lt;th>输出图片&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>QQ&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>QQ频道&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Kook&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>飞书&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Telegram&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Discord&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;td>✔️&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Ps: &lt;code>各聊天平台接入,请查看对应的Nonebot适配器使用说明&lt;/code>&lt;/p>
+&lt;h2 id="教程">教程&lt;/h2>
+&lt;h3 id="基本概念说明">基本概念说明&lt;/h3>
+&lt;h4 id="会话-chat-">会话( chat )&lt;/h4>
+&lt;p>在本插件中,&lt;code>会话&lt;/code>指的是 一个独立的由指定&lt;code>模型&lt;/code>驱动的聊天上下文&lt;/p>
+&lt;p>会话的分类如下:&lt;/p>
+&lt;pre class="mermaid">
+graph TD
+Chat["会话"]
+PrivateChat["私有会话"]
+PublicChat["公有会话"]
+QPrivateChat["QQ的一个和好友的聊天窗口,\n你们的对话时私有的,\n别的用户没办法加入到你们的对话中来.\n为了保证上下文的连贯性,\n同一个会话必须一问一答."]
+QPublicChat["QQ的一个群聊窗口, \n所有用户都可以使用.\n但用户是提问者,\n只有一个 语言模型 是回答者,\n为了保证上下文的连贯性,\n语言模型只能 一个一个顺序 回答问题,\n 不能同时回答你们"]
+Chat --> PrivateChat --> |"类似于"|QPrivateChat
+Chat --> PublicChat --> |"类似于"|QPublicChat
+&lt;/pre>
+&lt;!-- 模型开始 -->
+&lt;h4 id="模型-model-">模型( model )&lt;/h4>
+&lt;p>在本插件中,&lt;code>模型&lt;/code>指的是驱动&lt;code>会话&lt;/code>的实际的回复人
+&lt;code>模型&lt;/code>需要在web ui中配置相关内容才可以启用&lt;/p>
+&lt;h4 id="预设-prompt-">预设( prompt )&lt;/h4>
+&lt;p>在本插件中,&lt;code>预设&lt;/code>指每次新对话开始前,优先加载的&lt;strong>人格&lt;/strong>&lt;br>
+原理:&lt;br>
+基本是在&lt;code>会话&lt;/code>开始前,自动先向会话中发送预设文本,也有特殊的来源会使用其他方法&lt;/p>
+&lt;p>注意:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>预设&lt;/code> 不一定对所有的&lt;code>模型&lt;/code>都有效,因为有些模型本身会 阻止这种对模型输出行为的干预&lt;/li>
+&lt;li>&lt;code>预设&lt;/code> 的字数不是越长越好, 字数也会有&lt;strong>上限&lt;/strong>,各模型的上限不一, 超出上限会报错, 只能自行更改预设&lt;/li>
+&lt;/ul>
+&lt;!-- 模型结束 -->
+&lt;!-- 指令开始 -->
+&lt;h4 id="指令-command-">指令( command )&lt;/h4>
+&lt;p>在本插件中,&lt;code>指令&lt;/code>指自动填充在问题前面的指令,可以用来命令&lt;code>模型&lt;/code>一定的格式或者要求进行回复&lt;/p>
+&lt;p>原理:
+在发送用户的问题之前,现在用户的问题前面加上&lt;code>指令&lt;/code>文本,然后再发送过去
+注意:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>指令&lt;/code>字数有&lt;strong>上限&lt;/strong>,各模型的上限不一, 超出上限会报错, 只能自行更改指令&lt;/li>
+&lt;/ul>
+&lt;!-- 指令结束 -->
+&lt;!-- 基本使用逻辑开始 -->
+&lt;h3 id="基本使用逻辑说明">基本使用逻辑说明&lt;/h3>
+&lt;pre class="mermaid">
+graph TD
+CU["用户"]
+ML["获取模型列表"]
+PL["获取预设列表"]
+CmdL["获取指令列表"]
+CL["获取可用会话 (公有 | 私有)"]
+CAprivate["创建新的会话 (私有 | 公有 {仅管理员} ) "]
+CC["使用会话"]
+CPC["回复来继续会话"]
+CU --> CL
+CU --> ML
+CU --> CmdL
+CU --> PL
+ML --> CAprivate
+CmdL --> CAprivate
+PL --> CAprivate
+CL --> CC
+CAprivate --> CC
+CC --> CPC
+&lt;/pre>
+&lt;!-- 基本使用逻辑结束 -->
+&lt;h3 id="部署教程">部署教程&lt;/h3>
+&lt;h4 id="部署nonebot">部署Nonebot&lt;/h4>
+&lt;p>&lt;strong>这里直接看Well404的教程吧,点击即可跳转到b站系列教程&lt;/strong>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=608028309&amp;autoplay=0"
+scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>&lt;/p>
+&lt;h4 id="部署各适配器">部署各适配器&lt;/h4>
+&lt;p>在这里我直接贴出个适配器的官方使用文档或者合适的教程了&lt;/p>
+&lt;h5 id="qqobv11">QQ(OBV11)&lt;/h5>
+&lt;p>首先是qsign的部署,这个目前是 必须的&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV11W4y1o7u5&amp;autoplay=0"
+scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;p>然后需要使用 gocq 的dev 版本,这里给出 gocq dev的action地址,可以自行在这里寻找合适的构建版本,&lt;br>
+而连接到nb的方法在上面的 nonebot部署教程中已经又过了,这里不在放出地址&lt;br>
+&lt;a class="link" href="https://github.com/Mrs4s/go-cqhttp/actions/workflows/ci.yml" target="_blank" rel="noopener"
+>gocq-dev Action CL&lt;/a>&lt;/p>
+&lt;h5 id="qqguid-qq频道">QQGuid (QQ频道)&lt;/h5>
+&lt;p>&lt;a class="link" href="https://github.com/nonebot/adapter-qqguild" target="_blank" rel="noopener"
+>QQ频道适配器 gh链接&lt;/a>&lt;/p>
+&lt;h5 id="kook开黑啦">KOOK(开黑啦)&lt;/h5>
+&lt;p>&lt;a class="link" href="https://github.com/Tian-que/nonebot-adapter-kaiheila" target="_blank" rel="noopener"
+>KOOK(开黑啦)适配器 gh链接&lt;/a>&lt;/p>
+&lt;h5 id="飞书">飞书&lt;/h5>
+&lt;p>&lt;a class="link" href="https://feishu.adapters.nonebot.dev/docs/guide/installation" target="_blank" rel="noopener"
+>飞书(Lark)适配器 gh链接&lt;/a>&lt;/p>
+&lt;h5 id="telegram">Telegram&lt;/h5>
+&lt;p>&lt;a class="link" href="https://github.com/nonebot/adapter-telegram" target="_blank" rel="noopener"
+>Telegram适配器 gh链接&lt;/a>&lt;/p>
+&lt;h5 id="discord">Discord&lt;/h5>
+&lt;p>&lt;a class="link" href="https://github.com/nonebot/adapter-discord" target="_blank" rel="noopener"
+>Discord适配器 gh链接&lt;/a>&lt;/p>
+&lt;h4 id="部署spark-gpt">部署Spark GPT&lt;/h4>
+&lt;h5 id="安装插件">安装插件&lt;/h5>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nb plugin install spark_gpt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h5 id="配置相关信息">配置相关信息&lt;/h5>
+&lt;ol>
+&lt;li>SparkGPT 依赖 &lt;a class="link" href="https://github.com/canxin121/nonebot_plugin_web_config" target="_blank" rel="noopener"
+>nonebot_plugin_web_config&lt;/a> 进行实时配置热更新,所以需要配置的相关信息(端口,账号密码),可以点击进入查看相关的env配置.&lt;/li>
+&lt;li>SparkGPT 的GPT来源需要手动配置相应的 auth 信息才可以使用,具体获取方式都均在web ui(默认&lt;a class="link" href="http://127.0.0.1:8666" target="_blank" rel="noopener"
+>http://127.0.0.1:8666&lt;/a>)中已经标出,并可以实时热更新.&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用教程">使用教程&lt;/h3>
+&lt;p>使用教程图片版可以使用 shelp 命令获取.&lt;br>
+本插件 均采用&lt;a class="link" href="https://github.com/nonebot/plugin-alconna" target="_blank" rel="noopener"
+>Alc&lt;/a>命令形式 进行使用.&lt;br>
+在下面的文本中,用&lt;code>{}&lt;/code>来标志 需要替换的变量, 用&lt;code>()&lt;/code>框起来的为 选填的变量&lt;/p>
+&lt;h4 id="会话">会话&lt;/h4>
+&lt;h5 id="使用公有会话询问">使用公有会话询问&lt;/h5>
+&lt;p>格式: &lt;code>public_command{chat_name} {question} ( {photo} )&lt;/code>&lt;br>
+参数:&lt;/p>
+&lt;p>必填:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>chat_name&lt;/code>: 会话昵称&lt;/li>
+&lt;li>&lt;code>question&lt;/code>: 问题&lt;/li>
+&lt;/ol>
+&lt;p>选填:&lt;br>
+3. &lt;code>photo&lt;/code>: 需要识别的图片内容,只有model为bing时才可以使用,需要跟随文本信息一同发送
+4.&lt;/p>
+&lt;h5 id="使用私有会话询问">使用私有会话询问&lt;/h5>
+&lt;p>格式: &lt;code>private_command{chat_name} {question} ( {photo} )&lt;/code>&lt;br>
+参数:&lt;/p>
+&lt;p>必填:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>chat_name&lt;/code>: 会话昵称&lt;/li>
+&lt;li>&lt;code>question&lt;/code>: 问题&lt;/li>
+&lt;/ol>
+&lt;p>选填:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>photo&lt;/code>: 需要识别的图片内容,只有model为bing时才可以使用,需要跟随文本信息一同发送&lt;/li>
+&lt;/ol>
+&lt;h5 id="创建新的会话">创建新的会话&lt;/h5>
+&lt;p>格式: &lt;code>chat add -n {chat_name} -m {model} ( -p {prompt} -c {command} -auto_pic {bool} -num_limit {int} -pic {bool} -url {bool} -stream {bool} -public )&lt;/code>&lt;br>
+参数:&lt;/p>
+&lt;p>必填:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>chat_name&lt;/code>: 会话名称&lt;/li>
+&lt;li>&lt;code>model&lt;/code>: 使用的模型名称或者索引数字
+选填:&lt;/li>
+&lt;li>&lt;code>prompt&lt;/code>:&lt;br>
+使用本地预设,须在预设名称前加&amp;rsquo;.&amp;lsquo;号&lt;br>
+使用自定义预设,直接输入内容&lt;/li>
+&lt;li>&lt;code>command&lt;/code>:&lt;br>
+使用本地指令,须在指令名称前加&amp;rsquo;.&amp;lsquo;号&lt;br>
+使用自定义指令,直接输入内容&lt;/li>
+&lt;li>&lt;code>auto_pic&lt;/code>: 是否当字数过多时自动转图片&lt;/li>
+&lt;li>&lt;code>num_limit&lt;/code>: 自动转图片的字数上限&lt;/li>
+&lt;li>&lt;code>pic&lt;/code>: 是否总是文字转图片&lt;/li>
+&lt;li>&lt;code>url&lt;/code>: 是否在图片或流式回复时发送全文链接&lt;/li>
+&lt;li>&lt;code>stream&lt;/code>: 是否流式输出,分段发送结果&lt;/li>
+&lt;li>&lt;code>public&lt;/code>: 是否是创建共有会话&lt;/li>
+&lt;/ol>
+&lt;h5 id="修改新的会话">修改新的会话&lt;/h5>
+&lt;p>格式: &lt;code>chat edit -on {old_name} \n( -nn {new_name} -m {model} -p {prompt} -c {command} -auto_pic {bool} -num_limit {int} -pic {bool} -url {bool} -stream {bool} -public )&lt;/code>&lt;br>
+参数:&lt;/p>
+&lt;p>必填:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>old_name&lt;/code>: 原来的会话名称
+选填:&lt;/li>
+&lt;li>&lt;code>new_name&lt;/code>: 原来的会话名称&lt;/li>
+&lt;li>&lt;code>model&lt;/code>: 使用的模型名称或者索引数字&lt;/li>
+&lt;li>&lt;code>prompt&lt;/code>:&lt;br>
+使用本地预设,须在预设名称前加&amp;rsquo;.&amp;lsquo;号&lt;br>
+使用自定义预设,直接输入内容&lt;/li>
+&lt;li>&lt;code>command&lt;/code>:&lt;br>
+使用本地指令,须在指令名称前加&amp;rsquo;.&amp;lsquo;号&lt;br>
+使用自定义指令,直接输入内容&lt;/li>
+&lt;li>&lt;code>auto_pic&lt;/code>: 是否当字数过多时自动转图片&lt;/li>
+&lt;li>&lt;code>num_limit&lt;/code>: 自动转图片的字数上限&lt;/li>
+&lt;li>&lt;code>pic&lt;/code>: 是否总是文字转图片&lt;/li>
+&lt;li>&lt;code>url&lt;/code>: 是否在图片或流式回复时发送全文链接&lt;/li>
+&lt;li>&lt;code>stream&lt;/code>: 是否流式输出,分段发送结果&lt;/li>
+&lt;li>&lt;code>public&lt;/code>: 是否是修改共有会话&lt;/li>
+&lt;/ol>
+&lt;h5 id="获取所有会话的列表">获取所有会话的列表&lt;/h5>
+&lt;p>格式: &lt;code>chat list&lt;/code>&lt;/p>
+&lt;h5 id="删除一个会话">删除一个会话&lt;/h5>
+&lt;p>格式: &lt;code>chat del -n {chat_name} ( -public )&lt;/code>&lt;/p>
+&lt;p>必填:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>chat_name&lt;/code>: 会话名称&lt;/li>
+&lt;/ol>
+&lt;p>选填:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>public&lt;/code>: 是否是创建共有会话&lt;/li>
+&lt;/ol>
+&lt;h4 id="模型">模型&lt;/h4>
+&lt;h5 id="获取可用模型列表">获取可用模型列表&lt;/h5>
+&lt;p>格式: &lt;code>model list&lt;/code>&lt;/p>
+&lt;h4 id="预设">预设&lt;/h4>
+&lt;h5 id="添加一个新的预设">添加一个新的预设&lt;/h5>
+&lt;p>格式: &lt;code>prompt add -n {name} -c {content}&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+必填:&lt;/p>
+&lt;ol>
+&lt;li>name: 预设名称&lt;/li>
+&lt;li>content: 预设内容&lt;/li>
+&lt;/ol>
+&lt;h5 id="删除一个预设">删除一个预设&lt;/h5>
+&lt;p>格式: &lt;code>prompt del -n {name}&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+必填:&lt;/p>
+&lt;ol>
+&lt;li>name: 预设名称&lt;/li>
+&lt;/ol>
+&lt;h5 id="查看预设列表">查看预设列表&lt;/h5>
+&lt;p>格式: &lt;code>prompt list ( -p {num} )&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+选填:&lt;/p>
+&lt;ol>
+&lt;li>num: 页数&lt;/li>
+&lt;/ol>
+&lt;h5 id="查看特定预设具体内容">查看特定预设具体内容&lt;/h5>
+&lt;p>格式: &lt;code>prompt show -n {name}&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+必填:&lt;/p>
+&lt;ol>
+&lt;li>name: 预设名称&lt;/li>
+&lt;/ol>
+&lt;h4 id="指令">指令&lt;/h4>
+&lt;h5 id="添加一个新的指令">添加一个新的指令&lt;/h5>
+&lt;p>格式: &lt;code>command add -n {name} -c {content}&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+必填:&lt;/p>
+&lt;ol>
+&lt;li>name: 指令名称&lt;/li>
+&lt;li>content: 指令内容&lt;/li>
+&lt;/ol>
+&lt;h5 id="删除一个指令">删除一个指令&lt;/h5>
+&lt;p>格式: &lt;code>command del -n {name}&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+必填:&lt;/p>
+&lt;ol>
+&lt;li>name: 指令名称&lt;/li>
+&lt;/ol>
+&lt;h5 id="查看指令列表">查看指令列表&lt;/h5>
+&lt;p>格式: &lt;code>command list ( -p {num} )&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+选填:&lt;/p>
+&lt;ol>
+&lt;li>num: 页数&lt;/li>
+&lt;/ol>
+&lt;h5 id="查看特定指令具体内容">查看特定指令具体内容&lt;/h5>
+&lt;p>格式: &lt;code>command show -n {name}&lt;/code>&lt;/p>
+&lt;p>参数:&lt;br>
+必填:&lt;/p>
+&lt;ol>
+&lt;li>name: 指令名称&lt;/li>
+&lt;/ol></description></item><item><title>SparkGPT 思路分析</title><link>https://canxin121.github.io/p/sparkgpt-%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90/</link><pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate><guid>https://canxin121.github.io/p/sparkgpt-%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90/</guid><description>&lt;h2 id="项目地址---spark-gpthttpsgithubcomcanxin121spark-gpt">项目地址 -&amp;gt; &lt;a class="link" href="https://github.com/canxin121/Spark-GPT" target="_blank" rel="noopener"
+>Spark-GPT&lt;/a>&lt;/h2>
+&lt;h2 id="nonebot框架">Nonebot框架&lt;/h2>
+&lt;p>由于SparkGPT由Python开发, 在Python中运行, 而Python目前最佳的bot框架为Nonebot框架,所以 目前2.0.0版本深度绑定Nonebot框架进行开发.&lt;/p>
+&lt;p>预计将在下个大版本 将SparkGPT独立实现协议, 再实现不同语言框架的协议对接&lt;/p>
+&lt;h2 id="配置管理">配置管理&lt;/h2>
+&lt;h3 id="webui">webui&lt;/h3>
+&lt;p>实现了&lt;code>Nonebot_plugin_web_config&lt;/code>来是实现webui管理配置信息, 借助pydantic的&lt;code>BaseModel&lt;/code>来实现序列化反序列化并持久储存和方便的存取.&lt;/p>
+&lt;p>&lt;code>Nonebot_plugin_web_config&lt;/code>提供了一个父类给其他插件,直接继承并填写相关注释和属性即可实现持久储存和web编辑, 并且提供了从&lt;code>Nonebot_plugin_web_config&lt;/code>实时获取配置的方法,而无需重新反序列化.&lt;/p>
+&lt;p>ToDo:&lt;br>
+预计将会实现pydantic -&amp;gt; json schema的转换用于通信, 并重写前端页面&lt;/p>
+&lt;h2 id="数据储存">数据储存&lt;/h2>
+&lt;h3 id="用户会话数据储存">用户会话数据储存&lt;/h3>
+&lt;ol>
+&lt;li>使用pydantic的&lt;code>BaseModel&lt;/code>方便 序列化和反序列化&lt;/li>
+&lt;li>使用&lt;code>Nonebot_plugin_bind&lt;/code>的统一id作为用户标志储存, 实现跨平台跨账户的数据共享&lt;/li>
+&lt;li>所有的会话数据以json形式储存在以用户id命名的文件中, 单用户单数据, 保证数据的隔断性&lt;/li>
+&lt;/ol>
+&lt;h3 id="预设指令模型数据">预设,指令,模型数据&lt;/h3>
+&lt;ol>
+&lt;li>继承自&lt;code>Nonebot_plugin_web_config&lt;/code>提供的父类, 直接实现了持久储存和webui编辑&lt;/li>
+&lt;li>实现了一个装饰器, 方便的给每个子类生成一个从&lt;code>Nonebot_plugin_web_config&lt;/code>获取数据的方法&lt;/li>
+&lt;/ol>
+&lt;h2 id="消息事件处理">消息事件处理&lt;/h2>
+&lt;h3 id="消息接受">消息接受&lt;/h3>
+&lt;ol>
+&lt;li>依赖&lt;code>Nonebot_plugin_alconna&lt;/code>进行命令形式的消息事件匹配,分发给不同的函数进行处理&lt;/li>
+&lt;li>实现&lt;code>Nonebot_plugin_bind&lt;/code> 进行不同账户(可跨平台)信息的绑定, 将同一人的所有聊天平台的数据统一起来&lt;/li>
+&lt;li>实现了会话的持久储存和一个从信息中获取会话依赖注入, 可以从一条信息中获取用户私有的或公有的会话, 分发给不同模型的Chatbot处理&lt;/li>
+&lt;/ol>
+&lt;h3 id="回复生成">回复生成&lt;/h3>
+&lt;h4 id="模型回复">模型回复&lt;/h4>
+&lt;ol>
+&lt;li>实现&lt;code>BaseChatBot&lt;/code>父类, 实现使用 异步生成器 实现 流式发送(每次发送消息的两段左右,如果平台支持编辑消息,那么直接加到原来的消息后面,否则发送新的消息) 和 一次性发送(可以自适应长度文转图转链接, 也可以强制设定使用文字或图片回复), 这里其实就是消息发送的步骤.&lt;/li>
+&lt;li>所有的&lt;code>ChatBot&lt;/code>子类只需添加特有的属性(用于储存会话信息)和&lt;code>BaseChatBot&lt;/code>父类要求的属性, 以及一个异步生成器方法(逆向或使用官方api)和一个刷新会话方法, 即可实现一个新的api的接入&lt;/li>
+&lt;li>涉及的实现的逆向工程的链接&amp;quot; &lt;a class="link" href="https://github.com/canxin121/Async-Bing-Client" target="_blank" rel="noopener"
+>Async-Bing-Client&lt;/a> &amp;ldquo;, &amp;quot; &lt;a class="link" href="https://github.com/canxin121/Async-Poe-Client" target="_blank" rel="noopener"
+>Async-Poe-Client&lt;/a> &amp;ldquo;, &amp;quot; &lt;a class="link" href="https://github.com/canxin121/Async-Claude-Client" target="_blank" rel="noopener"
+>Async-Claude-Client&lt;/a> &amp;quot;&lt;/li>
+&lt;/ol>
+&lt;h4 id="普通回复">普通回复&lt;/h4>
+&lt;h5 id="菜单和帮助">菜单和帮助&lt;/h5>
+&lt;ol>
+&lt;li>实现了Nonebot_plugin_templates, 提供一些模板和构造方法, 直接构造出菜单的html并用htmlrender渲染截图返回结果.&lt;/li>
+&lt;li>实现了一个Menu类来将 文本菜单 和 Nonebot_plugin_templates生成的菜单同时实现, 并且缓存图片, 减小开销, 提高效率&lt;/li>
+&lt;/ol>
+&lt;h5 id="基本查看和管理">基本查看和管理&lt;/h5>
+&lt;ol>
+&lt;li>chat的list在&lt;code>用户会话数据储存类&lt;/code>的基础上加了一个方法, 并借助Nonebot_plugin_templates生成 会话的列表图片并缓存和动态更新, 减少开销, 提升效率&lt;/li>
+&lt;li>prompt和command的图片回复在&lt;code>Nonebot_plugin_web_config&lt;/code>的子类的基础上借助Nonebot_plugin_templates实现图片列表和具体展示&lt;/li>
+&lt;li>其他文本形式的回复直接发送即可&lt;/li>
+&lt;/ol>
+&lt;h3 id="消息发送">消息发送&lt;/h3>
+&lt;ol>
+&lt;li>依赖&lt;code>Nonebot_plugin_saa&lt;/code>进行跨适配器(跨聊天平台)的发送消息,可以实现图文发送&lt;/li>
+&lt;li>依赖&lt;code>Nonebot_plugin_htmlrender&lt;/code>进行文转图, 实质上就是使用playwright使用我的自制模板进行前端渲染并截图&lt;/li>
+&lt;li>使用 &lt;code>dpaste.org&lt;/code> 的 逆向api 进行文转网络剪切板链接, 方便用户拿去回答和信息&lt;/li>
+&lt;/ol></description></item><item><title>SparkGPT 预览</title><link>https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/</link><pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate><guid>https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/</guid><description>&lt;h2 id="项目地址---spark-gpthttpsgithubcomcanxin121spark-gpt">项目地址 -&amp;gt; &lt;a class="link" href="https://github.com/canxin121/Spark-GPT" target="_blank" rel="noopener"
+>Spark-GPT&lt;/a>&lt;/h2>
+&lt;h2 id="sparkgpt使用示例">SparkGPT使用示例&lt;/h2>
+&lt;h2 id="webui">Webui&lt;/h2>
+&lt;p>&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/webui.png"
+width="2560"
+height="1363"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/webui_hudfc518bf0e3dff5f58a40d0e9292d707_109343_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/webui_hudfc518bf0e3dff5f58a40d0e9292d707_109343_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="使用webui配置相关信息 "
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="450px"
+>&lt;/p>
+&lt;h2 id="帮助">帮助&lt;/h2>
+&lt;p>&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/shelp.png"
+width="576"
+height="543"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/shelp_hu944c3e2c5f8f713cb74e42c3e320bf12_505859_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/shelp_hu944c3e2c5f8f713cb74e42c3e320bf12_505859_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 获取帮助说明 "
+class="gallery-image"
+data-flex-grow="106"
+data-flex-basis="254px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/help.png"
+width="1103"
+height="1104"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/help_hu251595a42a1b5b8f82ad76b655cf6edf_1104940_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/help_hu251595a42a1b5b8f82ad76b655cf6edf_1104940_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 获取某个命令的子命令格式 "
+class="gallery-image"
+data-flex-grow="99"
+data-flex-basis="239px"
+>&lt;/p>
+&lt;h2 id="模型">模型&lt;/h2>
+&lt;p>&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/model_list.png"
+width="573"
+height="537"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/model_list_hu23029734091389392b7f3cc6c00ab338_504350_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/model_list_hu23029734091389392b7f3cc6c00ab338_504350_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 获取所有模型 "
+class="gallery-image"
+data-flex-grow="106"
+data-flex-basis="256px"
+>&lt;/p>
+&lt;h2 id="会话">会话&lt;/h2>
+&lt;p>&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_list.png"
+width="659"
+height="706"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_list_hu0073cb7dda307cc6b080e3dc900b34a8_691617_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_list_hu0073cb7dda307cc6b080e3dc900b34a8_691617_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 获取所有会话 "
+class="gallery-image"
+data-flex-grow="93"
+data-flex-basis="224px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/private_chat.png"
+width="655"
+height="1100"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/private_chat_hud4482fb84500528454f3593a7514105d_1059521_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/private_chat_hud4482fb84500528454f3593a7514105d_1059521_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 创建一个新的私有会话并使用 "
+class="gallery-image"
+data-flex-grow="59"
+data-flex-basis="142px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/public_chat.png"
+width="639"
+height="767"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/public_chat_hub91b792aa6ea24cd0e152fda59917491_555628_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/public_chat_hub91b792aa6ea24cd0e152fda59917491_555628_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 创建一个新的公有会话并使用 "
+class="gallery-image"
+data-flex-grow="83"
+data-flex-basis="199px"
+>&lt;br>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_del.png"
+width="653"
+height="278"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_del_hu470a197b58cd883b82a911a603d25821_243419_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_del_hu470a197b58cd883b82a911a603d25821_243419_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 删除一个会话 "
+class="gallery-image"
+data-flex-grow="234"
+data-flex-basis="563px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_edit.png"
+width="657"
+height="303"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_edit_hued1d147889be06e39648a664af08d1ad_225903_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/chat_edit_hued1d147889be06e39648a664af08d1ad_225903_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 编辑一个会话 "
+class="gallery-image"
+data-flex-grow="216"
+data-flex-basis="520px"
+>&lt;/p>
+&lt;h2 id="预设">预设&lt;/h2>
+&lt;p>&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_list.png"
+width="636"
+height="575"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_list_hu2a03ea50776fff542bb050407f9d74b3_517821_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_list_hu2a03ea50776fff542bb050407f9d74b3_517821_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 获取所有预设缩略信息 "
+class="gallery-image"
+data-flex-grow="110"
+data-flex-basis="265px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_show.png"
+width="645"
+height="643"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_show_hue285e6203402b430e11d1ef58ecd77df_404262_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_show_hue285e6203402b430e11d1ef58ecd77df_404262_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 查看某个预设 "
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_add.png"
+width="638"
+height="294"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_add_hu8d9c1abd7b76c69a4f57521c2565bb16_195901_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_add_hu8d9c1abd7b76c69a4f57521c2565bb16_195901_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 添加新的预设 "
+class="gallery-image"
+data-flex-grow="217"
+data-flex-basis="520px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_del.png"
+width="646"
+height="304"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_del_hu0c533b535e009a9a041576f870965eb8_279579_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/prompt_del_hu0c533b535e009a9a041576f870965eb8_279579_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 删除一个预设 "
+class="gallery-image"
+data-flex-grow="212"
+data-flex-basis="510px"
+>&lt;/p>
+&lt;h2 id="指令">指令&lt;/h2>
+&lt;p>&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_list.png"
+width="658"
+height="309"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_list_hudf42e09201443fce7f9a642b48866969_274942_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_list_hudf42e09201443fce7f9a642b48866969_274942_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 获取所有指令缩略信息 "
+class="gallery-image"
+data-flex-grow="212"
+data-flex-basis="511px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_show.png"
+width="636"
+height="541"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_show_huaa6fe30c97db4a6fbb3f7b189f90ba8e_310978_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_show_huaa6fe30c97db4a6fbb3f7b189f90ba8e_310978_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 查看某个指令 "
+class="gallery-image"
+data-flex-grow="117"
+data-flex-basis="282px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_add.png"
+width="654"
+height="315"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_add_hucf6b8b789b7e075a413aee63eed81613_210970_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_add_hucf6b8b789b7e075a413aee63eed81613_210970_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 添加新的指令 "
+class="gallery-image"
+data-flex-grow="207"
+data-flex-basis="498px"
+>
+&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_del.png"
+width="649"
+height="292"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_del_hu4ae45de794030bbc9548e0c4cd8cbc9e_260364_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/command_del_hu4ae45de794030bbc9548e0c4cd8cbc9e_260364_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" 删除一个指令 "
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="533px"
+>&lt;/p>
+&lt;h2 id="群二维码">群二维码&lt;/h2>
+&lt;p>&lt;img src="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/qrcode.png"
+width="1284"
+height="2283"
+srcset="https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/qrcode_hu51b203c4463a8d8fd4df1bc6f83211bb_239525_480x0_resize_box_3.png 480w, https://canxin121.github.io/p/sparkgpt-%E9%A2%84%E8%A7%88/images/qrcode_hu51b203c4463a8d8fd4df1bc6f83211bb_239525_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="134px"
+>&lt;/p></description></item></channel></rss>
